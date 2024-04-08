@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+}
+#root{
+  display: grid;
+  font-family: "poppins";
+  gap:1rem;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background:linear-gradient(rgb(5, 138, 131),rgb(25, 37, 139));
+  padding: 20px;
+  color: white;
+}
+.cart-counter{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+  padding: 10px  5px 0px 5px;
+  border-radius: 10px;
+  gap:0.2rem;
+  background-color: white;
+  cursor: pointer;
+}
+.cart-counter h3{
+  color: rgb(9, 9, 43);
+}
+.cart-img{
+  height: 30px;
+  width: 30px;
+}
+.counter{
+  height: 30px;
+  width: 30px;
+  background-color:white;
+  border-radius: 50%;
+  color: rgb(15, 52, 80);
+  line-height: 30px;
+  font-weight: bold;
+}
+.card{
+
+ display: flex;
+ flex-direction: column;
+ padding: 10px;
+ width: 220px;
+ margin: 10px;
+ box-shadow: 0 5px 5px 5px rgba(0,0,0,0.1);
+ gap:0.2rem
+}
+.card:hover{
+   box-shadow: 0 5px 5px 5px rgba(0,0,0,0.2);
+}
+.card-img{
+  height: 200px;
+  width: 200px;
+  padding-left: 10px;
+}
+.card h2{
+  opacity: 0.5;
+}
+.All-card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.add-btn{
+  cursor: pointer;
+  height: 40px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  background-color: rgb(64, 158, 150);
+  box-shadow: 0 3px 3px 3px rgba(0,0,0,0.1);   
+}
+.add-btn:hover{
+  border: none;
+  background-color: rgb(32, 104, 104);
+  color: white;
+}
+.remove-btn{
+  cursor: pointer;
+  height: 40px;
+  border-radius: 5px;
+  font-weight: bold;
+  border:none;
+  box-shadow: 0 3px 3px 3px rgba(124, 1, 1, 0.1);
+  color:black;
+  background-color: rgb(241, 110, 110);   
+}
+.remove-btn:hover{
+  background-color: rgb(172, 68, 68);
+  color: white;
+  border: none;
+  box-shadow: none;
+}
+h1{
+  font-family: "Rakkas", serif;
+  color:whitesmoke;
+}
+@media screen and (min-width:125px) and (max-width:425px){
+  .card{
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 130px;
+    margin: 5px;
+    box-shadow: 0 5px 5px 5px rgba(83, 0, 0, 0.1);
+    font-size: x-small;
+   
+   }
+   .card-img{ 
+    height: 110px;
+    width: 110px;
+    padding-left: 10px;
+  }
+  
+}
